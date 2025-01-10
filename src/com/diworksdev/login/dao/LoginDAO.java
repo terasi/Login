@@ -25,8 +25,8 @@ public class LoginDAO {
                 dto.setName(rs.getString("user_name"));
                 dto.setPassword(rs.getString("password"));
             }
-        } catch(SQLException e)
-            {e.printStackTrace();
+        } catch(SQLException e){
+            e.printStackTrace();
             }finally{
                 con.close();
             }
